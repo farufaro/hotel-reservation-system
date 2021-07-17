@@ -1,0 +1,606 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{FE900E9E-4119-471C-86CE-44A68B3D9E0A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>HotelManagementSystem.My.MyApplication</StartupObject>
+    <RootNamespace>HotelManagementSystem</RootNamespace>
+    <AssemblyName>HotelManagementSystem</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>HotelManagementSystem.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>HotelManagementSystem.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CheckOut.Designer.vb">
+      <DependentUpon>CheckOut.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CheckOut.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CHECK_OUT.Designer.vb">
+      <DependentUpon>CHECK_OUT.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CHECK_OUT.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="check_outDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>check_outDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="check_outDataSet1.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>check_outDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="check_outDataSet2.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>check_outDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FinalVenueDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FinalVenueDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="History.Designer.vb">
+      <DependentUpon>History.vb</DependentUpon>
+    </Compile>
+    <Compile Include="History.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Home.Designer.vb">
+      <DependentUpon>Home.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Home.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Hotel1DataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Hotel1DataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Hotel1DataSet1.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Hotel1DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Hotel1DataSet1.vb">
+      <DependentUpon>Hotel1DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Hotel1DataSet2.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Hotel1DataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Hotel1DataSet3.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Hotel1DataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Hotel1DataSet4.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Hotel1DataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Registration.Designer.vb">
+      <DependentUpon>Registration.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Registration.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="LoginForm.Designer.vb">
+      <DependentUpon>LoginForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LoginForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReservationForm1.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReservationForm.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ReservationFormDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReservationFormDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ReservationFormDataSet1.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReservationFormDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ReservationFormDataSet2.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReservationFormDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ReservationFormDataSet3.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReservationFormDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ReservationFormFinal.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReservationFormFinal.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Room.Designer.vb">
+      <DependentUpon>Room.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Room.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="RoomDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RoomDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="RoomDataSet1.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RoomDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="RoomDataSet2.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RoomDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="RoomDataSet3.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RoomDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="RoomListForm.Designer.vb">
+      <DependentUpon>RoomListForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="RoomListForm.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SplashScreenForm.Designer.vb">
+      <DependentUpon>SplashScreenForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SplashScreenForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Venue.Designer.vb">
+      <DependentUpon>Venue.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Venue.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="VenueDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>VenueDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="VenueListForm.Designer.vb">
+      <DependentUpon>VenueListForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="VenueListForm.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="CheckOut.resx">
+      <DependentUpon>CheckOut.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CHECK_OUT.resx">
+      <DependentUpon>CHECK_OUT.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="History.resx">
+      <DependentUpon>History.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Home.resx">
+      <DependentUpon>Home.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Registration.resx">
+      <DependentUpon>Registration.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginForm.resx">
+      <DependentUpon>LoginForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Room.resx">
+      <DependentUpon>Room.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RoomListForm.resx">
+      <DependentUpon>RoomListForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SplashScreenForm.resx">
+      <DependentUpon>SplashScreenForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Venue.resx">
+      <DependentUpon>Venue.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VenueListForm.resx">
+      <DependentUpon>VenueListForm.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="check_outDataSet.xsc">
+      <DependentUpon>check_outDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="check_outDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>check_outDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="check_outDataSet.xss">
+      <DependentUpon>check_outDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="check_outDataSet1.xsc">
+      <DependentUpon>check_outDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="check_outDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>check_outDataSet1.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="check_outDataSet1.xss">
+      <DependentUpon>check_outDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="check_outDataSet2.xsc">
+      <DependentUpon>check_outDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="check_outDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>check_outDataSet2.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="check_outDataSet2.xss">
+      <DependentUpon>check_outDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="FinalVenueDataSet.xsc">
+      <DependentUpon>FinalVenueDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="FinalVenueDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>FinalVenueDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="FinalVenueDataSet.xss">
+      <DependentUpon>FinalVenueDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Hotel1DataSet.xsc">
+      <DependentUpon>Hotel1DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Hotel1DataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Hotel1DataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Hotel1DataSet.xss">
+      <DependentUpon>Hotel1DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Hotel1DataSet1.xsc">
+      <DependentUpon>Hotel1DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Hotel1DataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Hotel1DataSet1.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Hotel1DataSet1.xss">
+      <DependentUpon>Hotel1DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Hotel1DataSet2.xsc">
+      <DependentUpon>Hotel1DataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="Hotel1DataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Hotel1DataSet2.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Hotel1DataSet2.xss">
+      <DependentUpon>Hotel1DataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="Hotel1DataSet3.xsc">
+      <DependentUpon>Hotel1DataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="Hotel1DataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Hotel1DataSet3.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Hotel1DataSet3.xss">
+      <DependentUpon>Hotel1DataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="Hotel1DataSet4.xsc">
+      <DependentUpon>Hotel1DataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="Hotel1DataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Hotel1DataSet4.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Hotel1DataSet4.xss">
+      <DependentUpon>Hotel1DataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+    <None Include="RoomDataSet.xsc">
+      <DependentUpon>RoomDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="RoomDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>RoomDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="RoomDataSet.xss">
+      <DependentUpon>RoomDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="RoomDataSet1.xsc">
+      <DependentUpon>RoomDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="RoomDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>RoomDataSet1.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="RoomDataSet1.xss">
+      <DependentUpon>RoomDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="RoomDataSet2.xsc">
+      <DependentUpon>RoomDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="RoomDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>RoomDataSet2.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="RoomDataSet2.xss">
+      <DependentUpon>RoomDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="RoomDataSet3.xsc">
+      <DependentUpon>RoomDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="RoomDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>RoomDataSet3.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="RoomDataSet3.xss">
+      <DependentUpon>RoomDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="VenueDataSet.xsc">
+      <DependentUpon>VenueDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="VenueDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>VenueDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="VenueDataSet.xss">
+      <DependentUpon>VenueDataSet.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ReservationForm.xsc">
+      <DependentUpon>ReservationForm.xsd</DependentUpon>
+    </None>
+    <None Include="ReservationForm.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ReservationForm1.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ReservationForm.xss">
+      <DependentUpon>ReservationForm.xsd</DependentUpon>
+    </None>
+    <None Include="ReservationFormDataSet.xsc">
+      <DependentUpon>ReservationFormDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ReservationFormDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ReservationFormDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ReservationFormDataSet.xss">
+      <DependentUpon>ReservationFormDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ReservationFormDataSet1.xsc">
+      <DependentUpon>ReservationFormDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="ReservationFormDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ReservationFormDataSet1.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ReservationFormDataSet1.xss">
+      <DependentUpon>ReservationFormDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="ReservationFormDataSet2.xsc">
+      <DependentUpon>ReservationFormDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="ReservationFormDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ReservationFormDataSet2.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ReservationFormDataSet2.xss">
+      <DependentUpon>ReservationFormDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="ReservationFormDataSet3.xsc">
+      <DependentUpon>ReservationFormDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="ReservationFormDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ReservationFormDataSet3.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ReservationFormDataSet3.xss">
+      <DependentUpon>ReservationFormDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="ReservationFormFinal.xsc">
+      <DependentUpon>ReservationFormFinal.xsd</DependentUpon>
+    </None>
+    <None Include="ReservationFormFinal.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ReservationFormFinal.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ReservationFormFinal.xss">
+      <DependentUpon>ReservationFormFinal.xsd</DependentUpon>
+    </None>
+    <None Include="Resources\about-logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rs.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logicon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\416-4167138_login-icon-vector-png-clipart.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngtree-user-login-or-authenticate-icon-on-gray-background-flat-icon-ve-png-image_1786166.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\52-521758_open-close-button-png-white.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kissclipart-lock-icon-png-clipart-computer-icons-clip-art-b33db3f052417486.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\png-transparent-computer-icons-user-login-desktop-others-blue-computer-prints.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\back.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\plus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngtree-user-login-or-authenticate-icon-on-gray-background-flat-icon-ve-png-image_17861661.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="check out.accdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="check_out.accdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Hotel1.accdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ReservationForm.accdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="Resources\bg.png" />
+    <None Include="Resources\12.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
